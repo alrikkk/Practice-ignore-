@@ -2,17 +2,23 @@
 
 struct Point {
     int x;
-    int y;  
+    int y;
 };
 
 int main() {
-    struct Point p1 = {10, 20};
-    struct Point *ptr = &p1;
+    struct Point p;
+    struct Point *ptr = &p;
 
-    printf("Point coordinates: (%d, %d)\n", ptr->x, ptr->y);
+    // Set values using pointer
+    ptr->x = 10;
+    ptr->y = 20;
 
-    printf("Point address: %p\n", (void*)ptr);
+    // Print using arrow operator
+    printf("X coordinate: %d\n", ptr->x);
+    printf("Y coordinate: %d\n", ptr->y);
+
+    // Equivalent syntax using dereferencing
+    printf("X coordinate using (*ptr).x: %d\n", (*ptr).x);
 
     return 0;
 }
-
