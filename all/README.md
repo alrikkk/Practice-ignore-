@@ -1,2 +1,2 @@
-## C_Practice-ignore-
-a repo built to store my practice program on C Programming language , please ignore it
+## _Practice-ignore-
+a repo built to store my practice and also experimenting with git bash  , please ignore it
